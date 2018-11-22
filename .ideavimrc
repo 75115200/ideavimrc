@@ -1,0 +1,43 @@
+
+let mapleader=";"
+noremap <leader>k gt
+noremap <leader>j gT
+noremap <leader>h :action Back<CR>
+noremap <leader>l :action Forward<CR>
+noremap <leader>v :action VimVisualToggleBlockMode<CR>
+ 
+noremap <leader>ga :action GotoAction<CR>
+noremap <leader>gc :action GotoClass<CR>
+noremap <leader>gd :action GotoDeclaration<CR>
+noremap <leader>gi :action GotoImplementation<CR>
+noremap <leader>gs :action GotoSuperMethod<CR>
+noremap <leader>gt :action GotoTest<CR>
+
+noremap <leader>ba :action BuildArtifact<CR>
+
+#noremap <leader>ne :action GotoNextError<CR>
+
+noremap <leader>su :action ShowUsages<CR>
+
+noremap <leader>n :action GotoNextBookmark<CR>
+
+noremap / :action Find<CR>
+
+map t :action GotoImplementation<CR>
+map T :action GotoSuperMethod<CR>
+ 
+# 设置shift选择移动
+#imap <S-Up> <Esc>v<Up>
+#imap <S-Down> <Esc>v<Down>
+#imap <S-Left> <Esc>v<Left>
+#imap <S-Right> <Esc>v<Right>
+
+map <C-a> <Esc>:action $SelectAll<CR>
+map <C-y> <Esc>:action $Redo<CR>
+map <C-x> <Esc>:action $Cut<CR>
+
+#默认使用系统剪贴板
+#set clipboard=unnamed
+set surround
+set showmode
+set ignorecase smartcase
